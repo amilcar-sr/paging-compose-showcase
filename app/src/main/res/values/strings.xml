@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PagingCompose</string>
+    <string name="error_text">An error happened, click here to retry.</string>
+    <string name="empty_list_text">No results, click here to retry.</string>
 </resources>

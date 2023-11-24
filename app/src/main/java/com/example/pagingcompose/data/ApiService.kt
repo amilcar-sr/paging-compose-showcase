@@ -12,5 +12,9 @@ interface ApiService {
         "X-RapidAPI-Host: moviesdatabase.p.rapidapi.com"
     )
     @GET("titles")
-    suspend fun getTitles(@Query("sort") sort: String = "year.decr"): TitleResponse
+    suspend fun getTitles(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int = 10,
+        @Query("sort") sort: String = "year.decr"
+    ): TitleResponse
 }

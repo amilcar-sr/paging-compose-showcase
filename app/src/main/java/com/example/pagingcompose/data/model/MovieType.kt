@@ -3,7 +3,7 @@ package com.example.pagingcompose.data.model
 import com.google.gson.annotations.SerializedName
 
 
-data class TitleType(
+data class MovieType(
     @SerializedName("text") var text: String? = null,
     @SerializedName("id") var id: String? = null,
     @SerializedName("isSeries") var isSeries: Boolean? = null,
